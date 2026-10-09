@@ -8,6 +8,9 @@
 # GitHub CLIへのログイン認証
 gh auth login
 ```
+```git
+git push orgin main
+```
 
 ## VS Code
 
