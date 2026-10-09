@@ -12,6 +12,10 @@ gh auth login
 git push orgin main
 ```
 
+```git
+git pull orgin main
+```
+
 ## VS Code
 
 ### Plugins
