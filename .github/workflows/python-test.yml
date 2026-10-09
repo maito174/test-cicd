@@ -1,0 +1,18 @@
+name: Python Setup Demo
+on: push
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Pythonのセットアップ
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # バージョン確認と簡単なワンライナーの実行
+      - name: Verify Python version
+        run: python --version
+          python -c "import sys; print(f'Hello from Python {sys.version_split()[0]}!')"
